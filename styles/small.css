@@ -1,6 +1,6 @@
 :root {
     --primary-color: #002147;      
-    --secondary-color: #0056b3;    
+    --secondary-color: #032c58;    
     --accent-color: #e0f2fe;        
     --text-color: #1f2937;          
     --text-light: #4b5563;          
@@ -167,10 +167,11 @@ main {
     margin-bottom: 0.5rem;
 }
 
-.hero h1 {
+.hero h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
+    color: var(--white-color);
 }
 
 .hero-image {
