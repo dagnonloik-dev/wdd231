@@ -101,6 +101,12 @@
         color: var(--white-color);
     }
 
+    .hero h2#page-title {
+        font-size: 2rem;
+        line-height: 1.2;
+        color: var(--white-color);
+    }
+
     .hero p {
         font-size: 1.1rem;
         color: #fff;

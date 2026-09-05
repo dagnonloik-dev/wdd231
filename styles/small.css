@@ -173,11 +173,11 @@ main {
     margin-bottom: 0.5rem;
 }
 
-.hero h2 {
+.hero h2#page-title {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .hero-image {
