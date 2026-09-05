@@ -1,0 +1,365 @@
+:root {
+    --primary-color: #002147;      
+    --secondary-color: #0056b3;    
+    --accent-color: #e0f2fe;        
+    --text-color: #1f2937;          
+    --text-light: #4b5563;          
+    --white-color: #ffffff;
+    --background-bg: #f3f4f6;       
+    
+    --completed-bg: #f0fdf4;        
+    --completed-border: #16a34a;    
+    --progress-bg: #fff7ed;        
+    --progress-border: #ea580c;      
+
+    --border-radius: 10px;
+    --transition-speed: 0.25s;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-bg);
+    line-height: 1.6;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 0;
+}
+
+p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* HEADER & MOBILE NAVIGATION */
+
+.site-header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    position: relative;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.logo-mark {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-weight: 800;
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: var(--white-color);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transition-speed) ease;
+}
+
+#menu-button:focus-visible {
+    outline: 2px solid var(--white-color);
+    border-radius: 4px;
+}
+
+#navigation {
+    display: none;
+    width: 100%;
+    background-color: #001630; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#navigation.open {
+    display: block;
+}
+
+#navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#navigation a {
+    display: block;
+    padding: 1.1rem 1.5rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color var(--transition-speed) ease;
+}
+
+#navigation a.active, 
+#navigation a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* MAIN LAYOUT & SECTIONS */
+
+main {
+    padding: 1.25rem;
+}
+
+.hero, 
+.about-section, 
+.courses-section {
+    background-color: var(--white-color);
+    padding: 1.75rem 1.5rem;
+    margin-bottom: 1.25rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+
+.hero-content p.eyebrow {
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.75rem;
+}
+
+.hero-image img {
+    border-radius: 50%;
+    border: 4px solid var(--accent-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.section-label {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin: 0 0 0.25rem 0;
+}
+
+.section-heading h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* CONTROLES ET FILTRES DES COURS */
+
+.course-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: 1.5rem 0;
+}
+
+.filter-button {
+    background-color: #f9fafb;
+    color: var(--text-color);
+    border: 1px solid #e5e7eb;
+    padding: 0.8rem 1rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+}
+
+.filter-button:hover {
+    background-color: #f3f4f6;
+}
+
+
+.filter-button.active-filter {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 33, 71, 0.15);
+}
+
+.credits {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+
+.credits strong {
+    color: var(--secondary-color);
+}
+
+/* CARTES DE COURS & LOGIQUE DE STATUT */
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.course-card {
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.course-card h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.course-card p {
+    margin: 0;
+}
+
+.course-card .completion-status {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+
+.course-card.completed {
+    background-color: #fff;
+    border-left: 6px solid var(--completed-border);
+}
+
+.course-card.completed h3 {
+    color: #14532d;
+}
+
+.course-card.completed .completion-status {
+    color: rgb(1, 31, 1);
+}
+
+.course-card:not(.completed) {
+    background-color: #fff;
+    border-left: 6px solid var(--progress-border);
+}
+
+.course-card:not(.completed) h3 {
+    color: #471302;
+}
+
+/* FOOTER */
+
+.site-footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 2.5rem 1.25rem 1.5rem 1.25rem;
+    text-align: center;
+}
+
+.footer-brand .footer-logo {
+    display: inline-block;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-weight: 800;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+}
+
+.footer-brand p {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0.2rem 0;
+}
+
+.social-links h2 {
+    color: var(--white-color);
+    font-size: 1.1rem;
+    margin: 1.75rem 0 0.75rem 0;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.social-links a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    opacity: 0.85;
+    transition: opacity var(--transition-speed) ease;
+}
+
+.social-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+.footer-bottom p {
+    margin: 0.4rem 0;
+    color: #9ca3af;
+}
