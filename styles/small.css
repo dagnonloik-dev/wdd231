@@ -177,7 +177,7 @@ main {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
-    color: var(--white-color);
+    color: #fff;
 }
 
 .hero-image {
