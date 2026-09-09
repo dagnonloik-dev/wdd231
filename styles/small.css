@@ -23,7 +23,6 @@ body {
     background-color: var(--background-bg);
     line-height: 1.6;
     margin: 0;
-    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3 {
@@ -82,7 +81,7 @@ img {
 .logo-text {
     font-weight: 700;
     font-size: 1.15rem;
-    letter-spacing: -0.02em;
+    letter-spacing: .02em;
 }
 
 #menu-button {
