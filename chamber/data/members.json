@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Benin Digital Solutions",
+        "address": "15 Haie Vive, Cotonou, Benin",
+        "phone": "+229 01 95 20 30 40",
+        "website": "https://www.example.com",
+        "image": "../images/images.jpg",
+        "membership": 3,
+        "description": "A technology company providing digital solutions and business services."
+    },
+    {
+        "name": "Cotonou Business Center",
+        "address": "42 Cadjehoun, Cotonou, Benin",
+        "phone": "+229 01 96 10 20 30",
+        "website": "https://www.example.com",
+        "image": "../images/haie.jpg",
+        "membership": 2,
+        "description": "A business center offering professional services and office solutions."
+    },
+    {
+        "name": "West Africa Logistics",
+        "address": "28 Akpakpa, Cotonou, Benin",
+        "phone": "+229 01 97 30 40 50",
+        "website": "https://www.example.com",
+        "image": "../images/seme.jpg",
+        "membership": 3,
+        "description": "A logistics company specializing in transportation and supply chain services."
+    },
+    {
+        "name": "Green Future Energy",
+        "address": "10 Fidjrossè, Cotonou, Benin",
+        "phone": "+229 01 98 40 50 60",
+        "website": "https://www.example.com",
+        "image": "../images/images1.jpg",
+        "membership": 2,
+        "description": "A renewable energy company focused on sustainable energy solutions."
+    },
+    {
+        "name": "Benin Creative Studio",
+        "address": "7 Zongo, Cotonou, Benin",
+        "phone": "+229 01 99 50 60 70",
+        "website": "https://www.example.com",
+        "image": "../images/cite.jpg",
+        "membership": 1,
+        "description": "A creative agency providing graphic design, branding, and digital content services."
+    },
+    {
+        "name": "Atlantic Business Group",
+        "address": "21 Ganhi, Cotonou, Benin",
+        "phone": "+229 01 90 60 70 80",
+        "website": "https://www.example.com",
+        "image": "../images/lot.jpg",
+        "membership": 3,
+        "description": "A business group supporting companies with consulting and investment services."
+    },
+    {
+        "name": "Cotonou Hospitality Services",
+        "address": "35 Haie Vive, Cotonou, Benin",
+        "phone": "+229 01 91 70 80 90",
+        "website": "https://www.example.com",
+        "image": "../images/hospital.jpg",
+        "membership": 1,
+        "description": "A hospitality company providing accommodation and tourism-related services."
+    },
+    {
+        "name": "African Innovation Hub",
+        "address": "18 Agla, Cotonou, Benin",
+        "phone": "+229 01 92 80 90 10",
+        "website": "https://www.example.com",
+        "image": "../images/images.jpg",
+        "membership": 2,
+        "description": "An innovation center supporting entrepreneurs, startups, and technology projects."
+    }
+]
